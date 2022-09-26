@@ -1,0 +1,198 @@
+<!-- Oi Thiago, preferi fazer o checkpoint 02 sozinho porque estou viajando (conhecendo Jericoacoara), volto pra casa/RJ dia 27.
+Só tive dificuldades no hover, apliquei de formas diferentes e não obtive resultados, talvez não seja compatível com o notebook que estou usando - windows 8, abraço. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet href="css/style.css">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+<!-- HEADER:
+Header deve conter 4 itens além da logo (Home, itens, login e sobre nós). Cada item deve linkar com uma parte do site ou uma página externa.
+O header deverá sempre estar no topo da página.  -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-code" viewBox="0 0 16 16">
+              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+            </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="./login.html">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Itens
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./itens.html">Item</a></li>
+                    <li><a class="dropdown-item" href="./itens.html">Outro Item</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./itens.html">Mias um Item</a></li>
+                  </ul>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./sobrenos.html">Sobre nós</a>
+                    </li>
+                </li>
+               </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+<!-- BANNER:
+A home deverá ter um banner e este deve ter o efeito parallax, (pesquise por background-attachment).
+O banner tem de ter um botão e uma breve descrição do site.
+O bnner vai ocupar toda área da viewport (VH) do usuário.  -->
+<main>
+    <div class="parallax bg-image card shadow-1-strong" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp'); height: 400px;">
+      <div class="card-body text-white">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">descrição do site aqui descrição do site aqui descrição do site aqui descrição do site aqui  
+        </p>
+        <a href="#!" class="btn btn-outline-light">Explore</a>
+      </div>
+    </div>
+    
+    <div
+      class="bg-image card shadow-1-strong"
+      style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');">
+
+      <style>
+        .parallax {
+          background-image: url("img_parallax.jpg");
+          min-height: 500px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+        
+<!-- LISTAGEM DE ITENS:
+A home terá uma listagem de itens. 
+O link do header para os itens, devem levar para essa seção da página.
+A listagem dos itens deve ter uma animação como por exemplo um scale no hover, mas se quiser fazer outro efeito.
+Mínimo de itens para listagem é 6.
+Os itens devem ter: título, foto, descrição e um botão que leva para a página de detalhe deste item. -->
+
+<div class="row">
+  <div class="col-md-4 text-center">
+     <h3 class="events"></h3>
+  </div>
+  <div class="col-md-4 text-center">
+     <h3 class="register">Itens</h3>
+  </div>
+</div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+          <div class="card bg-image hover-zoom">
+            <img src="https://kinsta.com/pt/wp-content/uploads/sites/3/2021/12/front-end-developer-1024x512.png" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Item 1</h5>
+            <p class="card-text">Descrição Item 1</p>
+            <a href="./itens.html" class="btn btn-primary">Item</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-image hover-zoom">
+          <img src="https://kinsta.com/pt/wp-content/uploads/sites/3/2021/10/front-end-developer-salary-1024x512.jpeg" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Item 2</h5>
+            <p class="card-text">Descrição Item 2</p>
+            <a href="./itens.html" class="btn btn-primary">Item</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-image hover-zoom">
+          <img src="https://kinsta.com/pt/wp-content/uploads/sites/3/2021/10/salario-desenvolvedor-backend-1024x512.jpeg" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Item 3</h5>
+            <p class="card-text">Descrição Item 3</p>
+            <a href="./itens.html" class="btn btn-primary">Item</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-image hover-zoom">
+          <img src="https://kinsta.com/it/wp-content/uploads/sites/2/2021/12/back-end-developer.png" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Item 4</h5>
+            <p class="card-text">Descrição Item 4</p>
+            <a href="./itens.html" class="btn btn-primary">Item</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-image hover-zoom">
+          <img src="https://kinsta.com/pt/wp-content/uploads/sites/3/2021/12/what-is-a-full-stack-developer-1024x512.png" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Item 5</h5>
+            <p class="card-text">Descrição Item 5</p>
+            <a href="./itens.html" class="btn btn-primary">Item</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-image hover-zoom">
+          <img src="https://www.guiacommarketing.com.br/wp-content/uploads/2021/06/conheca-o-curso-pacote-full-stack-da-danki-code.jpg" class="card-img-top w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Item 6</h5>
+            <p class="card-text">Descrição Item 6</p>
+            <a href="./itens.html" class="btn btn-primary">Item</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+</main>  
+
+<!-- FOOTER
+No footer deve haver informações sobre a equipe e sobre contato. Bem como ano de desenvolvimento do trabalho.  -->
+
+<footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+    <p>Aluno:</p>
+    <section class="mb-4">
+      <p>Artur Miguel do Nascimento Campos</p>
+      <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/artur-campos-bb201a234/" role="button"
+        ><i class="fab fa-linkedin-in"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+          <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+        </svg></i
+      ></a>
+      <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://github.com/arturmnc" role="button"
+        ><svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg><i class="fab fa-github"></i
+      ></a>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Checkpoint 2 desenvolvido em 2022
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
